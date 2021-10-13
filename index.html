@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="playfield">
+            
+            <div class="totalscores">
+                <div class="playerscore player1score active">
+                    <p>Player 1</p>
+                    <p>Total Score:</p>
+                    <p id="p1-totalscore">0</p>
+                </div>
+                
+                <div class="dice">
+                    <img src="img/6.png" alt="" class="diceImage">
+                </div>
+
+                <div class="playerscore player2score">
+                    <p>Player 2</p>
+                    <p>Total Score:</p>
+                    <p id="p2-totalscore">0</p>
+                </div>
+            </div>
+            
+            <div class="currentscores">
+                <div class="currentscore currentscore1 active">
+                    <p>Current Score:</p>
+                    <p id="p1-currentscore">0</p>
+                </div>
+               
+                <div class="currentscore currentscore2">
+                    <p>Current Score:</p>
+                    <p id="p2-currentscore">0</p>
+                </div>                
+            </div>
+
+            <div class="buttons">
+                <p class="roll">Roll a Dice</p>
+                <p class="addscore">Add Score</p>
+            </div>
+        </div>
+        
+        <div class="gameover">
+            <p id="winner">Player 1 wins!</p>
+            <p id="newgame">New game</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
