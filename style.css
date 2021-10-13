@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Nunito', sans-serif;
+}
+
+.background {
+    background: rgb(251,230,66);
+    background: linear-gradient(180deg, rgba(251,230,66,1) 0%, rgba(164,44,44,1) 55%);
+    background-size: 100% 200%;
+
+    height: 100vh;
+}
+
+.playfield {
+    width: 80%;
+    height: 80%;
+
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 25px;
+    
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    box-shadow: 5px 5px 20px #252525;
+}
+
+.playerscore {
+    padding: 5px;
+
+    width: 160px;
+    height: 100px;
+
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 12px;
+    color: white;
+
+    box-shadow: 5px 5px 15px #252525;
+}
+
+.playerscore p:nth-of-type(1) {
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+    
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.playerscore p:nth-of-type(2) {
+    color: #ddd;
+}
+
+.playerscore p:nth-of-type(3) {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.totalscores {
+    margin: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.currentscore {
+    padding: 5px;
+
+    width: 160px;
+    height: 60px;
+
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 12px;
+    color: white;
+    box-shadow: 5px 5px 15px #252525;
+}
+
+.currentscore p:nth-of-type(1) {
+    color: #ddd;
+}
+
+.currentscore p:nth-of-type(2) {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.currentscores {
+    margin: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.diceImage {
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px #252525;
+}
+
+.buttons {
+    padding: 160px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.roll, .addscore {
+    padding: 5px;
+
+    width: 160px;
+    height: 40px;
+
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 8px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-weight: 800;
+    color: white; 
+
+    box-shadow: 5px 5px 15px #252525;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+    cursor: pointer;
+}
+
+.roll:hover, .addscore:hover {
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 15px #111;
+}
+
+.active {
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 15px #111;
+}
+
+.gameover {
+    width: 50%;
+    height: 20%;
+
+    position: absolute;
+    top: 40%;
+    left: 25%;
+
+    background-color: rgba(0,0,0,0.75);
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#winner {
+    margin-bottom: 40px;
+
+    text-transform: uppercase;
+    
+    font-weight: 900;
+    font-size: 20px;
+    color: white;    
+}
+
+#newgame {
+    padding: 5px;
+
+    width: 160px;
+    height: 40px;
+
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 8px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-weight: 800;
+    color: white; 
+
+    box-shadow: 5px 5px 15px #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px;
+
+    cursor: pointer;    
+}
+
+#newgame:hover {
+    background-color: #B0492F;
+    box-shadow: 5px 5px 15px #111;
+}    
